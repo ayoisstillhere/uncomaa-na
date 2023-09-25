@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="px-20 md:grid md:grid-cols-2 gap-20 mb-20">
+    <div className="px-20 md:grid md:grid-cols-2 gap-20 mb-20 mt-40">
       <div>
         <h1 className="font-bold text-3xl leading-normal mb-5">
           Welcome to the University of Nigeria College of Medicine Alumni

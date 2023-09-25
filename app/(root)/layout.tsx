@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
         <NavBar />
-        <section className="mt-40">
+        <section>
           <div className="w-full">{children}</div>
         </section>
       </body>

@@ -52,15 +52,22 @@ const NavBar = () => {
         </div>
       </div>
       <div onClick={handleNav} className="block lg:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <div></div> : <AiOutlineMenu size={20} />}
       </div>
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 "
+            ? "fixed left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 "
             : "fixed left-[-100%]"
         }
       >
+        {nav ? (
+          <div className="fixed right-4 top-6 lg:hidden" onClick={handleNav}>
+            <AiOutlineClose size={20} />
+          </div>
+        ) : (
+          <div></div>
+        )}
         <h1 className="w-full text-3xl font-bold text-black m-4">MENU</h1>
         <ul className="uppercase p-4">
           {navBarLinks.map((link) => {

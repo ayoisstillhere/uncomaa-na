@@ -32,3 +32,24 @@ export const navBarLinks = [
     label: "Gallery",
   },
 ];
+
+export const currentOfficerDetails = [
+  {
+    name: "Amaka Ezeani (MD)",
+    position: "President",
+    image: "/assets/president.jpeg",
+    email: "",
+  },
+  {
+    name: "Anthea Nwandu (MD)",
+    position: "President Elect",
+    image: "/assets/presidentElect.jpeg",
+    email: "",
+  },
+  {
+    name: "Oby Ogbata (MD)",
+    position: "Treasurer",
+    image: "/assets/treasurer.jpeg",
+    email: "",
+  },
+];
