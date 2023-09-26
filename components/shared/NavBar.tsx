@@ -16,11 +16,11 @@ const NavBar = () => {
 
   const pathname = usePathname();
   return (
-    <nav className="py-6 px-20 flex items-center justify-between w-full fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+    <nav className="py-4 px-16 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent">
       <Link href="/">
         <Image src="assets/unnLogo.svg" alt="UNN Logo" width={48} height={48} />
       </Link>
-      <div className="hidden lg:flex gap-6 font-bold text-[#828297] text-sm items-center">
+      <div className="hidden lg:flex gap-10 text-white text-xs items-center">
         {navBarLinks.map((link) => {
           const isActive =
             (pathname.includes(link.route) && link.route.length > 1) ||
@@ -42,17 +42,17 @@ const NavBar = () => {
             <Image
               src="assets/medicalLogo.svg"
               alt="Medical Logo"
-              width={48}
-              height={48}
+              width={40}
+              height={40}
             />
           </Link>
-          <button className="px-6 py-2 bg-primary-green text-white rounded-md">
+          <button className="px-6 py-2 bg-primary-green text-white font-normal text-xs rounded-md">
             Donate!
           </button>
         </div>
       </div>
       <div onClick={handleNav} className="block lg:hidden">
-        {nav ? <div></div> : <AiOutlineMenu size={20} />}
+        {nav ? <div></div> : <AiOutlineMenu size={20} color="white" />}
       </div>
       <div
         className={
@@ -62,7 +62,7 @@ const NavBar = () => {
         }
       >
         {nav ? (
-          <div className="fixed right-4 top-6 lg:hidden" onClick={handleNav}>
+          <div className="fixed right-16 top-8 lg:hidden" onClick={handleNav}>
             <AiOutlineClose size={20} />
           </div>
         ) : (

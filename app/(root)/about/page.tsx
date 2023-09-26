@@ -1,26 +1,19 @@
 import OfficerCard from "@/components/cards/OfficerCard";
+import Hero from "@/components/shared/Hero";
 import { currentOfficerDetails } from "@/constants";
 import Image from "next/image";
 
 const page = () => {
   return (
     <>
-      <div className="mt-20 h-60 bg-black relative">
-        <Image
-          src="/assets/about.jpeg"
-          alt="About us"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-primary-green opacity-80"></div>
-        <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold">
-          About Us
-        </div>
-      </div>
+      <Hero
+        text="Shaping Medicine's Legacy, United in Alumni Pride."
+        img="/assets/about.jpeg"
+      />
       <div className="bg-gray-100 py-10">
         <div className="container mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl font-semibold mb-2">About UNCOMA-NA</h1>
+            <h1 className="text-4xl font-semibold mb-2">About UNCOMAA-NA</h1>
             <p className="text-gray-700 text-lg mb-8">
               University of Nigeria College of Medicine Alumni Association -
               North America
@@ -30,7 +23,7 @@ const page = () => {
             <h2 className="text-2xl font-semibold mb-4">Our Purpose</h2>
             <p className="text-gray-700 mb-6">
               The University of Nigeria College of Medicine Alumni Association -
-              North America (UNCOMA-NA) is established exclusively for
+              North America (UNCOMAA-NA) is established exclusively for
               charitable, educational, and scientific purposes. Our mission is
               to promote and foster the interests of The University of Nigeria
               College of Medicine.
@@ -86,7 +79,7 @@ const page = () => {
             {" "}
             <div className="flex flex-col items-center justify-center lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 gap-x-12">
               {currentOfficerDetails.map((officer) => (
-                <OfficerCard 
+                <OfficerCard
                   key={officer.name}
                   name={officer.name}
                   position={officer.position}
