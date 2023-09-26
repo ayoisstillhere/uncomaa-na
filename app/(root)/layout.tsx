@@ -2,6 +2,7 @@ import NavBar from "@/components/shared/NavBar";
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <section>
           <div className="w-full">{children}</div>
         </section>
+        <Footer />
       </body>
     </html>
   );
