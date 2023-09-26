@@ -17,9 +17,24 @@ const NavBar = () => {
   const pathname = usePathname();
   return (
     <nav className="py-4 px-16 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent">
-      <Link href="/">
-        <Image src="assets/unnLogo.svg" alt="UNN Logo" width={48} height={48} />
-      </Link>
+      <div className="flex gap-6">
+        <Link href="/">
+          <Image
+            src="assets/unnLogo.svg"
+            alt="UNN Logo"
+            width={48}
+            height={48}
+          />
+        </Link>
+        <Link href="/">
+          <Image
+            src="assets/medicalLogo.svg"
+            alt="Medical Logo"
+            width={40}
+            height={40}
+          />
+        </Link>
+      </div>
       <div className="hidden lg:flex gap-10 text-white text-xs items-center">
         {navBarLinks.map((link) => {
           const isActive =
@@ -37,19 +52,9 @@ const NavBar = () => {
             </Link>
           );
         })}
-        <div className="flex gap-4">
-          <Link href="/">
-            <Image
-              src="assets/medicalLogo.svg"
-              alt="Medical Logo"
-              width={40}
-              height={40}
-            />
-          </Link>
-          <button className="px-6 py-2 bg-primary-green text-white font-normal text-xs rounded-md">
-            Donate!
-          </button>
-        </div>
+        <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs rounded-[5px]">
+          Donate!
+        </button>
       </div>
       <div onClick={handleNav} className="block lg:hidden">
         {nav ? <div></div> : <AiOutlineMenu size={20} color="white" />}

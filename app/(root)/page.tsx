@@ -9,6 +9,7 @@ export default function Home() {
         text="
       Empowering Alumni Excellence, Connecting the Future of Medicine."
         img="/assets/heroImg.jpg"
+        typed={true}
       />
       <MailForn />
     </>

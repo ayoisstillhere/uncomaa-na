@@ -12,13 +12,6 @@ const page = () => {
       />
       <div className="bg-gray-100 py-10">
         <div className="container mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl font-semibold mb-2">About UNCOMAA-NA</h1>
-            <p className="text-gray-700 text-lg mb-8">
-              University of Nigeria College of Medicine Alumni Association -
-              North America
-            </p>
-          </div>
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h2 className="text-2xl font-semibold mb-4">Our Purpose</h2>
             <p className="text-gray-700 mb-6">
