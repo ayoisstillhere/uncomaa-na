@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-export default function Footer() {
+export default function FooterDemo() {
   return (
     <footer className="bg-gray-900">
       <div
