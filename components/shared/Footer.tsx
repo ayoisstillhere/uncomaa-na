@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="w-full mx-auto py-16 px-16 grid lg:grid-cols-3 gap-8 text-gray-300 bg-[#000300]">
       <div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 pb-2">
           <Image
             src="assets/unnLogo.svg"
             alt="UNN Logo"
@@ -37,7 +37,7 @@ const Footer = () => {
           <FaGithubSquare size={30} />
         </div>
       </div>
-      <div className="lg:col-span-2 flex justify-between mt-6">
+      <div className="lg:col-span-2 flex justify-between mt-6 ml-6">
         <div>
           <h6 className="font-medium text-gray-400">Membership</h6>
           <ul>
