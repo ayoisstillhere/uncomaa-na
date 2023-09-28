@@ -12,7 +12,7 @@ interface Props {
 
 const Hero = ({ text, img, typed }: Props) => {
   return (
-    <div className=" h-screen bg-black">
+    <div className="relative h-screen bg-black">
       <Image src={img} alt="About us" fill className="object-cover" />
       <div className="absolute inset-0 bg-black opacity-70"></div>
       {typed ? (
