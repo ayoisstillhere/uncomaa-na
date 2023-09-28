@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full mx-auto py-16 px-16 grid lg:grid-cols-3 gap-8 text-gray-300 bg-[#000300]">
+    <div className="w-full mx-auto py-16 px-16 grid lg:grid-cols-3 gap-8 text-gray-300 bg-[#000300] items-center">
       <div>
         <div className="flex gap-4 pb-2">
           <Image
@@ -30,7 +30,7 @@ const Footer = () => {
           educational, and scientific purposes. Our mission is to promote and
           foster the interests of The University of Nigeria College of Medicine.
         </p>
-        <div className="flex md:w-[75%] my-6 justify-between">
+        <div className="flex md:w-[75%] mt-1 justify-between">
           <FaFacebookSquare size={30} />
           <FaInstagram size={30} />
           <FaTwitterSquare size={30} />
