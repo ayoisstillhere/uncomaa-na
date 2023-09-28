@@ -16,7 +16,7 @@ const NavBar = () => {
 
   const pathname = usePathname();
   return (
-    <nav className="py-4 px-16 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent">
+    <nav className="py-4 px-4 md:px-16 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent">
       <div className="flex gap-6">
         <Link href="/">
           <Image
