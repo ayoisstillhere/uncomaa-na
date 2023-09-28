@@ -37,41 +37,40 @@ const Footer = () => {
           <FaGithubSquare size={30} />
         </div>
       </div>
-      <div className="lg:col-span-2 flex justify-between mt-6 ml-6">
+      <div className="lg:col-span-2 md:flex justify-between mt-6 lg:ml-6">
         <div>
-          <h6 className="font-medium text-gray-400">Membership</h6>
+          <h6 className="font-medium text-gray-400 max-sm:pt-4">Membership</h6>
           <ul>
-            <li className="py-2 text-sm">Analytics</li>
-            <li className="py-2 text-sm">Marketing</li>
-            <li className="py-2 text-sm">Commerce</li>
-            <li className="py-2 text-sm">Insights</li>
+            <li className="py-2 text-sm">Become a member</li>
+            <li className="py-2 text-sm">Membership Forum</li>
+            <li className="py-2 text-sm">Membership Benefits</li>
+            <li className="py-2 text-sm">Renew Membership</li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Support</h6>
+          <h6 className="font-medium text-gray-400 max-md:pt-4">Support</h6>
           <ul>
-            <li className="py-2 text-sm">Pricing</li>
-            <li className="py-2 text-sm">Documentation</li>
-            <li className="py-2 text-sm">Guides</li>
+            <li className="py-2 text-sm">Donate</li>
+            <li className="py-2 text-sm">Work with us</li>
+            <li className="py-2 text-sm">Membership Guides</li>
             <li className="py-2 text-sm">API Status</li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Quick Links</h6>
+          <h6 className="font-medium text-gray-400 max-sm:pt-4">Quick Links</h6>
           <ul>
             <li className="py-2 text-sm">About</li>
-            <li className="py-2 text-sm">Blogs</li>
+            <li className="py-2 text-sm">Membership</li>
             <li className="py-2 text-sm">Jobs</li>
-            <li className="py-2 text-sm">Press</li>
-            <li className="py-2 text-sm">Carrers</li>
+            <li className="py-2 text-sm">Contribute</li>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-gray-400">Other Links</h6>
+          <h6 className="font-medium text-gray-400 max-sm:pt-4">Other Links</h6>
           <ul>
-            <li className="py-2 text-sm">Claim</li>
-            <li className="py-2 text-sm">Policy</li>
-            <li className="py-2 text-sm">Terms</li>
+            <li className="py-2 text-sm">Events</li>
+            <li className="py-2 text-sm">Education</li>
+            <li className="py-2 text-sm">Contact us</li>
           </ul>
         </div>
       </div>
