@@ -16,7 +16,7 @@ const Hero = ({ text, img, typed }: Props) => {
       <Image src={img} alt="About us" fill className="object-cover" />
       <div className="absolute inset-0 bg-black opacity-70"></div>
       {typed ? (
-        <div className="absolute md:px-28 px-4 inset-0 flex items-center  text-white text-5xl font-bold max-w-4xl">
+        <div className="absolute md:px-28 px-4 inset-0 flex items-center text-white md:text-5xl text-2xl font-bold max-w-4xl">
           <h1>
             Empowering Alumni Excellence,
             <Typed

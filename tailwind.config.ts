@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         "primary-green": "#387041",
-        "bg-light-green": "#F0F5F4",
+        "bg-light-green": "#f1f7fa",
         "secondary-blue": "#7E96D5",
       },
     },
