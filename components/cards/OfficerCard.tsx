@@ -9,7 +9,7 @@ interface Props {
 
 const OfficerCard = ({ name, position, image, email }: Props) => {
   return (
-    <div className=" md:w-full hover:scale-105 duration-300 shadow-lg rounded-xl overflow-hidden mb-6">
+    <div className="max-md:w-64 hover:scale-105 duration-300 shadow-lg rounded-xl overflow-hidden mb-6">
       <div className="relative h-44">
         <Image src={image} alt={position} fill className="object-cover" />
       </div>
