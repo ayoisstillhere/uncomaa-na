@@ -47,7 +47,7 @@ const Carousel = ({ slides }: any) => {
             {index === current && (
               <>
                 <div className="absolute inset-0 bg-black opacity-70"></div>
-                <img src={slide} alt="travel image" className="image" />
+                <img src={slide.image} alt="travel image" className="image" />
               </>
             )}
           </div>
