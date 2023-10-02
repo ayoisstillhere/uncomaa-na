@@ -20,17 +20,20 @@ const Carousel = ({ slides }: any) => {
   }
 
   return (
-    <section className="slider">
+    <section className="relative">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {slides.map((slide, index) => {
         return (
           <div
-            className={index === current ? "slide active" : "slide"}
+            className={index === current ? "slide active relative" : "slide relative"}
             key={index}
           >
             {index === current && (
-              <img src={slide} alt="travel image" className="image" />
+              <>
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <img src={slide} alt="travel image" className="image" />
+              </>
             )}
           </div>
         );
