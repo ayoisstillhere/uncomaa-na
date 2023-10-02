@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -54,6 +53,19 @@ const Carousel = ({ slides }: any) => {
           </div>
         );
       })}
+      <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`h-4 w-4 rounded-full ${
+              index === current
+                ? "bg-white" // White when active
+                : "bg-gray-400" // A shade of grey when inactive
+            }`}
+          ></button>
+        ))}
+      </div>
     </section>
   );
 };
