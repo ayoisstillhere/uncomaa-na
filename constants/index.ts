@@ -53,3 +53,17 @@ export const currentOfficerDetails = [
     email: "",
   },
 ];
+
+export const slides  = [
+  "/assets/slides/slide1.jpeg",
+  "/assets/slides/slide2.jpeg",
+  "/assets/slides/slide3.jpeg",
+  "/assets/slides/slide4.jpeg",
+  "/assets/slides/slide5.jpeg",
+  "/assets/slides/slide6.jpeg",
+  "/assets/slides/slide7.jpeg",
+  "/assets/slides/slide8.jpeg",
+  "/assets/slides/slide9.jpeg",
+  "/assets/slides/slide10.jpeg",
+  "/assets/slides/slide11.jpeg",
+]

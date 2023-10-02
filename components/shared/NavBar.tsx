@@ -17,24 +17,29 @@ const NavBar = () => {
   const pathname = usePathname();
   return (
     <nav className="py-4 px-4 md:px-16 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent">
-      <div className="flex gap-6">
-        <Link href="/">
-          <Image
-            src="assets/unnLogo.svg"
-            alt="UNN Logo"
-            width={48}
-            height={48}
-          />
-        </Link>
-        <Link href="/">
-          <Image
-            src="assets/medicalLogo.svg"
-            alt="Medical Logo"
-            width={40}
-            height={40}
-          />
-        </Link>
-      </div>
+      <Link href="/">
+        <div className="flex flex-col items-center justify-center text-center">
+          <div className="flex gap-6">
+            <Image
+              src="assets/unnLogo.svg"
+              alt="UNN Logo"
+              width={36}
+              height={36}
+            />
+            <Image
+              src="assets/medicalLogo.svg"
+              alt="Medical Logo"
+              width={30}
+              height={30}
+            />
+          </div>
+          <p className="text-white text-[0.3rem]">
+            University of Nigeria College of Medicine Alumni Association- North
+            America
+          </p>
+        </div>
+      </Link>
+
       <div className="hidden lg:flex gap-10 text-white text-xs items-center">
         {navBarLinks.map((link) => {
           const isActive =
