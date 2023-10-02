@@ -53,6 +53,9 @@ const Carousel = ({ slides }: any) => {
           </div>
         );
       })}
+      <div className="absolute text-center justify-center inset-0 flex items-center  text-white md:text-5xl text-2xl font-bold max-w-4xl">
+        <h1>{slides[current].text}</h1>
+      </div>
       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <button
