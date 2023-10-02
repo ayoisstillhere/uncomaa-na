@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const Carousel = ({ slides }: any) => {
@@ -14,6 +14,14 @@ const Carousel = ({ slides }: any) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup the interval on unmount
+  }, [current]);
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
@@ -31,7 +39,7 @@ const Carousel = ({ slides }: any) => {
           >
             {index === current && (
               <>
-                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="absolute inset-0 bg-black opacity-70"></div>
                 <img src={slide} alt="travel image" className="image" />
               </>
             )}
