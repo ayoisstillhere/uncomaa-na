@@ -29,12 +29,20 @@ const Carousel = ({ slides }: any) => {
 
   return (
     <section className="relative">
-      <FaArrowAltCircleLeft className="left-arrow max-lg:hidden" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow max-lg:hidden" onClick={nextSlide} />
+      <FaArrowAltCircleLeft
+        className="left-arrow max-lg:hidden"
+        onClick={prevSlide}
+      />
+      <FaArrowAltCircleRight
+        className="right-arrow max-lg:hidden"
+        onClick={nextSlide}
+      />
       {slides.map((slide, index) => {
         return (
           <div
-            className={index === current ? "slide active relative" : "slide relative"}
+            className={
+              index === current ? "slide active relative" : "slide relative"
+            }
             key={index}
           >
             {index === current && (
