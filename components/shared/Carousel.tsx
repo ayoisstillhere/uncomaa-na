@@ -53,7 +53,7 @@ const Carousel = ({ slides }: any) => {
           </div>
         );
       })}
-      <div className="absolute text-center justify-center inset-0 flex flex-col gap-8 items-center  text-white md:text-5xl text-2xl font-bold max-w-4xl">
+      <div className="absolute text-center justify-center inset-0 flex flex-col gap-8 items-center text-white md:text-5xl text-2xl font-bold max-w-4xl px-4">
         <h1>{slides[current].text}</h1>
         <button className="bg-primary-green hover:bg-bg-light-green hover:text-primary-green text-white font-bold py-2 px-4 rounded text-sm">
           LEARN MORE
