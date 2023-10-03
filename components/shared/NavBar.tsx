@@ -39,7 +39,9 @@ const NavBar = () => {
             </p> */}
           </div>
         </Link>
-
+        <div onClick={handleNav} className="block lg:hidden">
+          {nav ? <div></div> : <AiOutlineMenu size={20} color="white" />}
+        </div>
         <div className="hidden lg:flex gap-10 text-white text-xs items-center px-10">
           {navBarLinks.map((link) => {
             const isActive =
@@ -69,9 +71,7 @@ const NavBar = () => {
             Dues
           </button>
         </div>
-        <div onClick={handleNav} className="block lg:hidden">
-          {nav ? <div></div> : <AiOutlineMenu size={20} color="white" />}
-        </div>
+
         <div
           className={
             nav
@@ -80,7 +80,7 @@ const NavBar = () => {
           }
         >
           {nav ? (
-            <div className="fixed right-16 top-8 lg:hidden" onClick={handleNav}>
+            <div className="fixed right-2 top-8 lg:hidden" onClick={handleNav}>
               <AiOutlineClose size={20} />
             </div>
           ) : (
@@ -111,19 +111,23 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-      <div className="pt-20 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent p-2">
-        <div className="lg:hidden flex gap-2 justify-between w-full">
-          <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
-            Donate!
-          </button>
-          <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
-            Join
-          </button>
-          <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
-            Dues
-          </button>
+      {!nav ? (
+        <div className="mt-20 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent p-2">
+          <div className="lg:hidden flex gap-2 justify-between w-full">
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+              Donate!
+            </button>
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+              Join
+            </button>
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+              Dues
+            </button>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 };
