@@ -40,9 +40,9 @@ const NavBar = () => {
           </div>
         </Link>
         <div onClick={handleNav} className="block lg:hidden">
-          {nav ? <div></div> : <AiOutlineMenu size={20} color="white" />}
+          {nav ? <div></div> : <AiOutlineMenu size={20} />}
         </div>
-        <div className="hidden lg:flex gap-10 text-white text-xs items-center px-10">
+        <div className="hidden lg:flex gap-8 text-xs items-center px-10">
           {navBarLinks.map((link) => {
             const isActive =
               (pathname.includes(link.route) && link.route.length > 1) ||

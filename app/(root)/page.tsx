@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Carousel from "@/components/shared/Carousel";
 import { slides } from "@/constants";
+import HeroLogo from "@/components/shared/HeroLogo";
 
 export const metadata: Metadata = {
   title:
@@ -21,7 +22,8 @@ export default function Home() {
         img="/assets/heroImg.jpg"
         typed={true}
       /> */}
-      <Carousel slides={slides} />
+      {/* <Carousel slides={slides} /> */}
+      <HeroLogo />
       <MailForn />
     </>
   );

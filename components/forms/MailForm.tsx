@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MailForm = () => {
   return (
-    <div className="md:px-20 px-8 md:grid md:grid-cols-2 gap-20 mb-20 mt-12 py-6">
+    <div className="md:px-20 px-8 md:grid md:grid-cols-2 gap-20 py-20 bg-bg-light-green">
       <div>
         <h1 className="font-bold text-3xl leading-normal mb-5">
           Welcome to the University of Nigeria College of Medicine Alumni
