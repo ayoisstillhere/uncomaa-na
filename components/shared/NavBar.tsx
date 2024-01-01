@@ -42,24 +42,46 @@ const NavBar = () => {
         <div onClick={handleNav} className="block lg:hidden">
           {nav ? <div></div> : <AiOutlineMenu size={20} />}
         </div>
-        <div className="hidden lg:flex gap-8 text-xs items-center px-10">
-          {navBarLinks.map((link) => {
-            const isActive =
-              (pathname.includes(link.route) && link.route.length > 1) ||
-              pathname === link.route;
-            return (
-              <Link
-                href={link.route}
-                key={link.label}
-                className={`${
-                  isActive && "text-primary-green"
-                } hover:text-primary-green`}
-              >
-                <p>{link.label}</p>
-              </Link>
-            );
-          })}
-        </div>
+        {pathname === "/" ? (
+          <div className="hidden lg:flex gap-8 text-xs items-center px-10">
+            {navBarLinks.map((link) => {
+              const isActive =
+                (pathname.includes(link.route) && link.route.length > 1) ||
+                pathname === link.route;
+              return (
+                <Link
+                  href={link.route}
+                  key={link.label}
+                  className={`${
+                    isActive && "text-primary-green"
+                  } hover:text-primary-green`}
+                >
+                  <p>{link.label}</p>
+                </Link>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="hidden text-white lg:flex gap-8 text-xs items-center px-10">
+            {navBarLinks.map((link) => {
+              const isActive =
+                (pathname.includes(link.route) && link.route.length > 1) ||
+                pathname === link.route;
+              return (
+                <Link
+                  href={link.route}
+                  key={link.label}
+                  className={`${
+                    isActive && "text-primary-green"
+                  } hover:text-primary-green`}
+                >
+                  <p>{link.label}</p>
+                </Link>
+              );
+            })}
+          </div>
+        )}
+
         <div className="lg:flex gap-2 hidden">
           <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs rounded-[5px]">
             Donate!

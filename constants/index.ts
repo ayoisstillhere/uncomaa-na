@@ -101,3 +101,25 @@ export const slides = [
   },
 ];
 
+export const membershipClasses = [
+  {
+    title: "Practicing Physicians",
+    description: "For licensed physicians actively practicing medicine.",
+    imageSrc: "/assets/practicing-physicians.jpg",
+  },
+  {
+    title: "Student Members",
+    description: "For students currently enrolled in a medical program.",
+    imageSrc: "/assets/student-members.jpg",
+  },
+  {
+    title: "The Associate Members",
+    description: "For individuals who want to support the organization.",
+    imageSrc: "/assets/associate-members.jpg",
+  },
+  {
+    title: "Honorary Members",
+    description: "For individuals honored by the organization.",
+    imageSrc: "/assets/honorary-members.jpeg",
+  },
+];
