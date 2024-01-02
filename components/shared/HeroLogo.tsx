@@ -18,7 +18,7 @@ const HeroLogo = () => {
             height={150}
           />
         </div>
-        <h1 className="font-bold text-xl md:text-2xl lg:text-3xl text-center leading-relaxed px-4">University of Nigeria College of Medicine Alumni Association- North America (UNCOMA-NA)</h1>
+        <h1 className="font-bold text-xl md:text-2xl lg:text-3xl text-center leading-relaxed px-4">University of Nigeria College of Medicine Alumni Association- North America (UNCOMAA-NA)</h1>
       </div>
     </div>
   );
