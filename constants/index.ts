@@ -35,19 +35,19 @@ export const navBarLinks = [
 
 export const currentOfficerDetails = [
   {
-    name: "Amaka Ezeani (MD)",
+    name: "Amaka Ezeani (MBBS)",
     position: "President",
     image: "/assets/president.jpeg",
     email: "",
   },
   {
-    name: "Anthea Nwandu (MD)",
+    name: "Anthea Nwandu (MBBS)",
     position: "President Elect",
     image: "/assets/presidentElect.jpeg",
     email: "",
   },
   {
-    name: "Oby Ogbata (MD)",
+    name: "Oby Ogbata (MBBS)",
     position: "Treasurer",
     image: "/assets/treasurer.jpeg",
     email: "",

@@ -6,7 +6,7 @@ const MailForm = () => {
       <div>
         <h1 className="font-bold text-3xl leading-normal mb-5">
           Welcome to the University of Nigeria College of Medicine Alumni
-          Association- North America (UNCOMA-NA)
+          Association- North America (UNCOMAA-NA)
         </h1>
         <p className=" text-gray-500 text-sm mb-8">
           Working towards charitable, educational and scientific purposes, that

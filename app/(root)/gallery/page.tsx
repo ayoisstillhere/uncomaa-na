@@ -20,7 +20,7 @@ const page = () => {
       <Hero text="Gallery" img="/assets/testHero.jpg" />
       <div className="container mx-auto my-8">
       <h1 className="text-6xl text-center pt-24 pb-12">Past Events</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-24">
         {galleryImages.map((image, index) => (
           <div key={index} className="overflow-hidden rounded-lg shadow-md">
             <Image
