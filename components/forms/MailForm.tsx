@@ -16,7 +16,7 @@ const MailForm = () => {
         <div className="flex gap-3">
           <input
             type="text"
-            className="flex-grow border text-xs px-2"
+            className="flex-grow border text-xs px-2 rounded-md"
             placeholder="Enter your email address"
           />
           <button className="bg-primary-green text-white px-4 py-2 text-sm rounded-md">
