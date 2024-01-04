@@ -7,7 +7,7 @@ const page = () => {
     <div>
       <Hero text="Membership" img="/assets/testHero.jpg" />
       <div className="bg-bg-light-green text-center py-16 px-4">
-        <h1 className="font-bold text-3xl">UCOMA-NA Membership</h1>
+        <h1 className="font-bold text-3xl">UNCOMAA-NA Membership</h1>
         <h6 className="text-[#646464] text-sm">
           Working together to promote and foster the interests of The University
           of Nigeria College of Medicine
