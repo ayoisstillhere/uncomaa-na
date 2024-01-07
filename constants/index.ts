@@ -123,3 +123,21 @@ export const membershipClasses = [
     imageSrc: "/assets/honorary-members.jpeg",
   },
 ];
+
+export const events = [
+  {
+    title: "Supporting the Medical Students UMSA Week",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageUrl: "assets/events1.avif",
+  },
+  {
+    title: "Funding the MEDDIKKA Journal",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageUrl: "assets/events2.avif",
+  },
+  {
+    title: "Sponsorship of the Medical Journal",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageUrl: "assets/events3.avif",
+  },
+];
