@@ -12,16 +12,27 @@ const page = () => {
           Working together to promote and foster the interests of The University
           of Nigeria College of Medicine
         </h6>
-        {/* <div className="lg:grid lg:grid-cols-2 xl:grid-cols-2 gap-4 md:flex md:flex-wrap justify-center lg:px-32 md:px-20 ">
-          {membershipClasses.map((membershipClass, index) => (
-            <MemberClassCard
-              key={index}
-              title={membershipClass.title}
-              description={membershipClass.description}
-              imageSrc={membershipClass.imageSrc}
-            />
-          ))}
-        </div> */}
+        <section className="mb-12">
+          <p className="text-gray-600">
+            As a member of UNCOMAA-NA, you enjoy various benefits, including networking opportunities,
+            access to exclusive events, and the satisfaction of supporting the College of Medicine's
+            initiatives.
+          </p>
+
+          {/* How to Join */}
+        <section className="mb-12">
+          <h2 className="font-bold text-2xl mb-4">How to Join</h2>
+          <p className="text-gray-600">
+            To become a member, simply follow these steps:
+            <ol className="list-decimal pl-6 mt-2">
+              <li>Complete the online registration form.</li>
+              <li>Submit the annual membership dues through Zelle.</li>
+              <li>Stay connected and enjoy the benefits of being part of our alumni association!</li>
+            </ol>
+          </p>
+        </section>
+        
+        </section>
         <div className="flex items-center justify-center mt-4">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <h1 className="text-2xl font-bold mb-4">UNCOMAA-USA Alumni Association</h1>
@@ -38,3 +49,17 @@ const page = () => {
 };
 
 export default page;
+
+
+
+        {/* <div className="lg:grid lg:grid-cols-2 xl:grid-cols-2 gap-4 md:flex md:flex-wrap justify-center lg:px-32 md:px-20 ">
+          {membershipClasses.map((membershipClass, index) => (
+            <MemberClassCard
+              key={index}
+              title={membershipClass.title}
+              description={membershipClass.description}
+              imageSrc={membershipClass.imageSrc}
+            />
+          ))}
+        </div> */}
+        {/* Membership Benefits */}
