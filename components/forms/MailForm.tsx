@@ -11,7 +11,7 @@ const MailForm = () => {
         <p className=" text-gray-500 text-sm mb-8">
           Working towards charitable, educational and scientific purposes, that
           help promote and foster the interests of The University of Nigeria
-          College of Medicine.
+          College of Medicine, For our GREAT LIONS and LIONESSES!!!
         </p>
         <div className="flex gap-3">
           <input
