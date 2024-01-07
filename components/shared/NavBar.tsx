@@ -39,9 +39,15 @@ const NavBar = () => {
             </p> */}
           </div>
         </Link>
+        {
+          pathname === "/" ? (
+            <div onClick={handleNav} className="block lg:hidden">
+              {nav ? <div></div> : <AiOutlineMenu size={20} />}
+            </div>) : (
         <div onClick={handleNav} className="block lg:hidden">
-          {nav ? <div></div> : <AiOutlineMenu size={20} />}
-        </div>
+          {nav ? <div></div> : <AiOutlineMenu size={20} className="text-white"/>}
+        </div>)
+        }
         {pathname === "/" ? (
           <div className="hidden lg:flex gap-8 text-xs items-center px-10">
             {navBarLinks.map((link) => {
