@@ -1,54 +1,59 @@
-import MemberClassCard from "@/components/cards/MemberClassCard";
+import MembershipForm from "@/components/forms/MembershipForm";
 import Hero from "@/components/shared/Hero";
-import { membershipClasses } from "@/constants";
 
-const page = () => {
+const MembershipPage = () => {
   return (
-    <div>
+    <div className="bg-bg-light-green">
       <Hero text="Membership" img="/assets/testHero.jpg" />
-      <div className="bg-bg-light-green text-center py-16 px-4">
+      <div className="text-center py-16 px-4">
         <h1 className="font-bold text-3xl">UNCOMAA-NA Membership</h1>
         <h6 className="text-[#646464] text-sm">
           Working together to promote and foster the interests of The University
           of Nigeria College of Medicine
         </h6>
-        <section className="mb-12">
-          <p className="text-gray-600">
+
+        <section className="my-12 mx-auto max-w-2xl">
+          <p className="text-[#646464]">
             As a member of UNCOMAA-NA, you enjoy various benefits, including networking opportunities,
             access to exclusive events, and the satisfaction of supporting the College of Medicine's
             initiatives.
           </p>
 
+          <div className="flex items-center justify-center mt-4">
+          <div className="bg-white p-8 rounded shadow-md w-96 text-center">
+            <h1 className="text-2xl font-bold mb-4">UNCOMAA-USA Alumni Association</h1>
+            <p className="text-gray-600 mb-4">
+              UNCOMAA-USA is a 501(c)(3) organization. Annual dues and any donations made to UNCOMAA-USA are tax deductible.
+            </p>
+            <p className="text-gray-600 mb-4">Please Zelle $200 membership dues, and other charitable funds to:</p>
+            <p className="text-primary-green font-semibold mb-4">❗️❗️ uncomaa@gmail.com ❗️❗️</p>
+          </div>
+        </div>
+
           {/* How to Join */}
-        <section className="mb-12">
-          <h2 className="font-bold text-2xl mb-4">How to Join</h2>
-          <p className="text-gray-600">
-            To become a member, simply follow these steps:
-            <ol className="list-decimal pl-6 mt-2">
-              <li>Complete the online registration form.</li>
-              <li>Submit the annual membership dues through Zelle.</li>
-              <li>Stay connected and enjoy the benefits of being part of our alumni association!</li>
-            </ol>
-          </p>
+          <section className="my-12">
+            <h2 className="font-bold text-2xl mb-4">How to Join</h2>
+            <p className="text-[#646464]">
+              To become a member, simply follow these steps:
+              <ol className="list-decimal pl-6 mt-2 text-left">
+                <li>Complete the online registration form.</li>
+                <li>Submit the annual membership dues through Zelle.</li>
+                <li>Stay connected and enjoy the benefits of being part of our alumni association!</li>
+              </ol>
+            </p>
+          </section>
         </section>
-        
-        </section>
-        <div className="flex items-center justify-center mt-4">
-      <div className="bg-white p-8 rounded shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-4">UNCOMAA-USA Alumni Association</h1>
-        <p className="text-gray-600 mb-4">
-          UNCOMAA-USA is a 501-3c organization. Annual dues and any donations made to UNCOMAA-USA are tax deductible.
-        </p>
-        <p className="text-gray-600 mb-4">Please Zelle $200 membership dues, and other charitable funds to:</p>
-        <p className="text-primary-green font-semibold mb-4">❗️❗️uncomaa@gmail.com❗️❗️</p>
-      </div>
-    </div>
+         {/* Membership Form */}
+      <section className="my-12 mx-auto max-w-2xl">
+        <MembershipForm />
+      </section>
       </div>
     </div>
   );
 };
 
-export default page;
+export default MembershipPage;
+
 
 
 
