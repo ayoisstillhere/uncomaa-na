@@ -29,7 +29,7 @@ const page = () => {
           UNCOMAA-USA is a 501-3c organization. Annual dues and any donations made to UNCOMAA-USA are tax deductible.
         </p>
         <p className="text-gray-600 mb-4">Please Zelle $200 membership dues, and other charitable funds to:</p>
-        <p className="text-blue-500 font-semibold mb-4">❗️❗️uncomaa@gmail.com❗️❗️</p>
+        <p className="text-primary-green font-semibold mb-4">❗️❗️uncomaa@gmail.com❗️❗️</p>
       </div>
     </div>
       </div>
