@@ -47,32 +47,6 @@ const MembershipForm = () => {
         />
       </div>
 
-      {/* Occupation */}
-      <div className="mb-4">
-        <label className="block text-[#646464] text-sm font-bold mb-2" htmlFor="occupation">
-          Occupation
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="occupation"
-          type="text"
-          placeholder="Your Occupation"
-        />
-      </div>
-
-      {/* Employer */}
-      <div className="mb-4">
-        <label className="block text-[#646464] text-sm font-bold mb-2" htmlFor="employer">
-          Employer
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="employer"
-          type="text"
-          placeholder="Your Employer"
-        />
-      </div>
-
       <button
         type="submit"
         className="bg-primary-green text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
