@@ -29,7 +29,7 @@ const Hero = ({ text, img, typed }: Props) => {
           </h1>
         </div>
       ) : (
-        <div className="absolute px-20 inset-0 flex text-center justify-center flex-col items-center text-white md:text-5xl text-2xl font-bold max-w-4xl">
+        <div className="absolute px-20 inset-0 flex text-center justify-center flex-col items-center text-white md:text-5xl text-2xl font-bold">
           {text}
         </div>
       )}
