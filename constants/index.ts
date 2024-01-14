@@ -54,6 +54,39 @@ export const currentOfficerDetails = [
   },
 ];
 
+export const exPresidentsDetails = [
+  {
+    name: "Dr. Obinna Maduka",
+    image:"/assets/exPresident1.jpeg",
+    email: "",
+  },
+  {
+    name: "Dr. Charmaine Emefiele",
+    image:"/assets/exPresident2.png",
+    email: "",
+  },
+  {
+    name: "Dr. Nkem Chukwumerije",
+    image:"/assets/exPresident3.jpeg",
+    email: "",
+  },
+  {
+    name: "Dr. Chinenye Anyaogu",
+    image:"/assets/exPresident4.jpeg",
+    email: "",
+  },
+  {
+    name: "Dr. Chima Nwaukwa",
+    image:"/assets/exPresident5.png",
+    email: "",
+  },
+  {
+    name: "Prof. Macualy Onuigbo",
+    image:"/assets/exPresident6.jpeg",
+    email: "",
+  },
+];
+
 export const slides = [
   {
     image: "/assets/slides/slide1.jpeg",

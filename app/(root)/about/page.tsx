@@ -1,7 +1,8 @@
+import ExPresidentCard from "@/components/cards/ExPresidentCard";
 import OfficerCard from "@/components/cards/OfficerCard";
 import PurposeContentCard from "@/components/cards/PurposeContentCard";
 import Hero from "@/components/shared/Hero";
-import { currentOfficerDetails } from "@/constants";
+import { currentOfficerDetails, exPresidentsDetails } from "@/constants";
 import Image from "next/image";
 
 const page = () => {
@@ -39,7 +40,24 @@ const page = () => {
 
       <div className="bg-gray-100 text-black py-24">
         <div className="mx-auto text-center">
-          <h1 className="text-4xl font-semibold mb-10">Our Officers</h1>
+          <h1 className="text-4xl font-semibold mb-10">Our Ex-Presidents</h1>
+        </div>
+        <div className="px-20 sm:px-16">
+          <div className="mx-auto max-w-screen-lg">
+            {" "}
+            <div className="flex flex-col items-center justify-center lg:grid md:grid sm:grid sm:grid-cols-2 lg:grid-cols-6 md:grid-cols-3 gap-x-6">
+              {exPresidentsDetails.map((officer) => (
+                <ExPresidentCard
+                  key={officer.name}
+                  name={officer.name}
+                  image={officer.image}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto text-center">
+          <h1 className="text-4xl font-semibold mb-10">Our Current Officers</h1>
         </div>
         <div className="px-20">
           <div className="mx-auto max-w-screen-lg">
