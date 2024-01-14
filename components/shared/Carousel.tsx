@@ -48,7 +48,6 @@ const Carousel = ({ slides }: any) => {
           >
             {index === current && (
               <>
-                <div className="absolute inset-0 bg-black opacity-70"></div>
                 <img src={slide.image} alt="travel image" className="image" />
               </>
             )}
@@ -56,10 +55,6 @@ const Carousel = ({ slides }: any) => {
         );
       })}
       <div className="absolute text-center justify-center inset-0 flex flex-col gap-8 items-center text-white md:text-5xl text-2xl font-bold px-4">
-        <h1>{slides[current].text}</h1>
-        <button className="bg-primary-green hover:bg-bg-light-green hover:text-primary-green text-white font-bold py-2 px-4 rounded text-sm">
-          LEARN MORE
-        </button>
       </div>
       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
