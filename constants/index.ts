@@ -160,17 +160,17 @@ export const membershipClasses = [
 export const events = [
   {
     title: "Supporting the Medical Students UMSA Week",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Join us in our commitment to fostering medical education by supporting the Medical Students UMSA Week. Engage with students, share experiences, and contribute to the advancement of medical knowledge.",
     imageUrl: "assets/events1.avif",
   },
   {
     title: "Funding the MEDDIKKA Journal",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "We are proud to contribute to the development of medical literature by providing financial support to the MEDDIKKA Journal. Help us in promoting research, innovation, and the dissemination of valuable medical insights.",
     imageUrl: "assets/events2.avif",
   },
   {
     title: "Sponsorship of the Medical Journal",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Explore the realms of medical knowledge with our sponsorship of the Medical Journal. Together, let's empower researchers, medical professionals, and enthusiasts to make impactful contributions to the field.",
     imageUrl: "assets/events3.avif",
   },
 ];
