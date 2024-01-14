@@ -174,3 +174,24 @@ export const events = [
     imageUrl: "assets/events3.avif",
   },
 ];
+
+const previousEvents = [
+  {
+    title: "Painkillers, Herbal Medications, Skin Care Products, and the Rising Incidence of Kidney Disease in the Nigerian Population",
+    description: "A discourse on the relationship between painkillers, herbal medications, skin care products, and the increasing cases of kidney disease in the Nigerian population.",
+    imageUrl: "/assets/painkillers-event.jpeg",
+  },
+  {
+    title: "1st Distinguished Alumni Lecture and Awards Day",
+    description: "An event celebrating the achievements of distinguished alumni, featuring a lecture and awards ceremony.",
+    imageUrl: "/assets/distinguished-alumni-event.jpeg",
+  },
+  {
+    title: "Jonathan C. Azubuike OFR - 80th Birthday Celebration",
+    description: "A celebration honoring Jonathan C. Azubuike OFR, Emeritus Professor of Paediatrics at the University of Nigeria, on his 80th birthday.",
+    imageUrl: "/assets/jonathan-azubuike-event.jpeg",
+  },
+];
+
+export default previousEvents;
+
