@@ -28,7 +28,7 @@ const Carousel = ({ slides }: any) => {
 
   return (
     <section className="relative">
-      <FaArrowAltCircleLeft
+      {/* <FaArrowAltCircleLeft
         className="left-arrow max-lg:hidden"
         onClick={prevSlide}
         style={{ color: "white" }}
@@ -37,7 +37,7 @@ const Carousel = ({ slides }: any) => {
         className="right-arrow max-lg:hidden"
         onClick={nextSlide}
         style={{ color: "white" }}
-      />
+      /> */}
       {slides.map((slide, index) => {
         return (
           <div
@@ -54,8 +54,7 @@ const Carousel = ({ slides }: any) => {
           </div>
         );
       })}
-      <div className="absolute text-center justify-center inset-0 flex flex-col gap-8 items-center text-white md:text-5xl text-2xl font-bold px-4">
-      </div>
+      <div className="absolute text-center justify-center inset-0 flex flex-col gap-8 items-center text-white md:text-5xl text-2xl font-bold px-4"></div>
       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <button
