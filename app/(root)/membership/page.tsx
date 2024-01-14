@@ -21,9 +21,9 @@ const MembershipPage = () => {
 
           <div className="flex items-center justify-center mt-4">
           <div className="bg-white p-8 rounded shadow-md w-96 text-center">
-            <h1 className="text-2xl font-bold mb-4">UNCOMAA-USA Alumni Association</h1>
+            <h1 className="text-2xl font-bold mb-4">UNCOMAA-NA Alumni Association</h1>
             <p className="text-gray-600 mb-4">
-            Great lions and lionesses!!, UNCOMAA-USA is a 501(c)(3) organization. Annual dues and any donations made to UNCOMAA-USA are tax deductible.
+            Great lions and lionesses!!, UNCOMAA-NA is a 501(c)(3) organization. Annual dues and any donations made to UNCOMAA-NA are tax deductible.
             </p>
             <p className="text-gray-600 mb-4">Please Zelle $200 membership dues, and other charitable funds to:</p>
             <p className="text-primary-green font-semibold mb-4">❗️❗️ uncomaa@gmail.com ❗️❗️</p>
