@@ -25,8 +25,8 @@ const MembershipPage = () => {
             <p className="text-gray-600 mb-4">
             Great lions and lionesses!!, UNCOMAA-NA is a 501(c)(3) organization. Annual dues and any donations made to UNCOMAA-NA are tax deductible.
             </p>
-            <p className="text-gray-600 mb-4">Please Zelle $200 membership dues, and other charitable funds to:</p>
-            <p className="text-primary-green font-semibold mb-4">❗️❗️ uncomaa@gmail.com ❗️❗️</p>
+            <p className="text-gray-600 mb-4 font-bold text-xl">Please Zelle $200 membership dues, and other charitable funds to:</p>
+            <p className="text-primary-green font-bold mb-4 text-2xl">❗️❗️uncomaa@gmail.com❗️❗️</p>
           </div>
         </div>
 
