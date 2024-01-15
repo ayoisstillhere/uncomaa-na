@@ -238,6 +238,13 @@ export const slides3 = [
   },
 ];
 
+export const eventVids = [
+  "/assets/eventVids/eventVid1.mp4",
+  "/assets/eventVids/eventVid2.mp4",
+  "/assets/eventVids/eventVid3.mp4",
+  "/assets/eventVids/eventVid4.mp4",
+];
+
 export const membershipClasses = [
   {
     title: "Practicing Physicians",
