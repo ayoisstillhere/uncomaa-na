@@ -132,6 +132,110 @@ export const slides = [
     image: "/assets/slides/slide11.jpeg",
     text: "Join the Alumni Community Today!",
   },
+  {
+    image: "/assets/slides/slide12.jpeg",
+    text: "Join the Alumni Community Today!",
+  },
+];
+export const slides2 = [
+  {
+    image: "/assets/slides2/slide1.jpeg",
+    text: "Welcome to University College Alumni Association",
+  },
+  {
+    image: "/assets/slides2/slide2.jpeg",
+    text: "Celebrating Our Rich History",
+  },
+  {
+    image: "/assets/slides2/slide3.jpeg",
+    text: "Connecting Alumni Around the Globe",
+  },
+  {
+    image: "/assets/slides2/slide4.jpeg",
+    text: "Advancing Education and Research",
+  },
+  {
+    image: "/assets/slides2/slide5.jpeg",
+    text: "Supporting Future Generations",
+  },
+  {
+    image: "/assets/slides2/slide6.jpeg",
+    text: "Join Us in Building a Brighter Future",
+  },
+  {
+    image: "/assets/slides2/slide7.jpeg",
+    text: "Engage, Network, and Give Back",
+  },
+  {
+    image: "/assets/slides2/slide8.jpeg",
+    text: "Stay Connected with Your Alma Mater",
+  },
+  {
+    image: "/assets/slides2/slide9.jpeg",
+    text: "Alumni Events and Reunions",
+  },
+  {
+    image: "/assets/slides2/slide10.jpeg",
+    text: "Empowering Alumni Success Stories",
+  },
+  {
+    image: "/assets/slides2/slide11.jpeg",
+    text: "Join the Alumni Community Today!",
+  },
+  {
+    image: "/assets/slides2/slide12.jpeg",
+    text: "Join the Alumni Community Today!",
+  },
+];
+export const slides3 = [
+  {
+    image: "/assets/slides3/slide1.jpeg",
+    text: "Welcome to University College Alumni Association",
+  },
+  {
+    image: "/assets/slides3/slide2.jpeg",
+    text: "Celebrating Our Rich History",
+  },
+  {
+    image: "/assets/slides3/slide3.jpeg",
+    text: "Connecting Alumni Around the Globe",
+  },
+  {
+    image: "/assets/slides3/slide4.jpeg",
+    text: "Advancing Education and Research",
+  },
+  {
+    image: "/assets/slides3/slide5.jpeg",
+    text: "Supporting Future Generations",
+  },
+  {
+    image: "/assets/slides3/slide6.jpeg",
+    text: "Join Us in Building a Brighter Future",
+  },
+  {
+    image: "/assets/slides3/slide7.jpeg",
+    text: "Engage, Network, and Give Back",
+  },
+  {
+    image: "/assets/slides3/slide8.jpeg",
+    text: "Stay Connected with Your Alma Mater",
+  },
+  {
+    image: "/assets/slides3/slide9.jpeg",
+    text: "Alumni Events and Reunions",
+  },
+  {
+    image: "/assets/slides3/slide10.jpeg",
+    text: "Empowering Alumni Success Stories",
+  },
+  {
+    image: "/assets/slides3/slide11.jpeg",
+    text: "Join the Alumni Community Today!",
+  },
+  {
+    image: "/assets/slides3/slide12.jpeg",
+    text: "Join the Alumni Community Today!",
+  },
 ];
 
 export const membershipClasses = [
