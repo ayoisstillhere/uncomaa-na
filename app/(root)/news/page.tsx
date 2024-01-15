@@ -3,7 +3,7 @@ import Hero from "@/components/shared/Hero";
 const Page = () => {
   return (
     <div>
-      <Hero text="News" img="/assets/testHero.jpg" />
+      <Hero text="News" img="/assets/news.jpeg" />
       <div className="container mx-auto my-8">
         <h1 className="text-4xl font-bold mb-6">Recent News</h1>
 

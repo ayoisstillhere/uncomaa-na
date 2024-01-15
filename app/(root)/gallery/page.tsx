@@ -19,7 +19,7 @@ const page = () => {
   ];
   return (
     <div>
-      <Hero text="Gallery" img="/assets/testHero.jpg" />
+      <Hero text="Gallery" img="/assets/gallery.jpeg" />
       <div className="container mx-auto my-8">
         <h1 className="text-3xl text-center pt-12 pb-12 font-bold">Picture Gallery</h1>
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-24 max-sm:mx-10">

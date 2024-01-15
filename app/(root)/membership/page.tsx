@@ -4,7 +4,7 @@ import Hero from "@/components/shared/Hero";
 const MembershipPage = () => {
   return (
     <div className="bg-bg-light-green">
-      <Hero text="Membership" img="/assets/testHero.jpg" />
+      <Hero text="Membership" img="/assets/membership.jpeg" />
       <div className="text-center py-16 px-4">
         <h1 className="font-bold text-3xl">UNCOMAA-NA Membership</h1>
         <h6 className="text-[#646464] text-sm">
