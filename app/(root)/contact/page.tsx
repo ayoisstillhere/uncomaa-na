@@ -13,7 +13,7 @@ const page = () => {
           </p>
           <a
             href="mailto:uncomaa@gmail.com"
-            className="block bg-secondary-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+            className="block bg-secondary-blue hover:bg-blue-600 text-white font-semibold py-2 px-4"
           >
             Email: uncomaa@gmail.com
           </a>

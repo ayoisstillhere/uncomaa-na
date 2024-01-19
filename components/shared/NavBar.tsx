@@ -89,13 +89,13 @@ const NavBar = () => {
         )}
 
         <div className="lg:flex gap-2 hidden">
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs rounded-[5px]">
+          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
             Donate!
           </button>
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs rounded-[5px]">
+          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
             Join
           </button>
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs rounded-[5px]">
+          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
             Dues
           </button>
         </div>
@@ -142,13 +142,13 @@ const NavBar = () => {
       {!nav ? (
         <div className="mt-20 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent p-2">
           <div className="lg:hidden flex gap-2 justify-between w-full">
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
               Donate!
             </button>
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
               Join
             </button>
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs rounded-[5px]">
+            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
               Dues
             </button>
           </div>

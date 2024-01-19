@@ -21,7 +21,7 @@ const OfficerCard = ({ name, position, image, email }: Props) => {
           </h3>
         </div>
 
-        <button className="bg-secondary-blue text-white w-full py-4 font-bold rounded-md">
+        <button className="bg-secondary-blue text-white w-full py-4 font-bold">
           Contact
         </button>
       </div>
