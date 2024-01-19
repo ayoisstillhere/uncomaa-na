@@ -3,7 +3,6 @@ import OfficerCard from "@/components/cards/OfficerCard";
 import PurposeContentCard from "@/components/cards/PurposeContentCard";
 import Hero from "@/components/shared/Hero";
 import { currentOfficerDetails, exPresidentsDetails, founders } from "@/constants";
-import Image from "next/image";
 
 const page = () => {
   return (
