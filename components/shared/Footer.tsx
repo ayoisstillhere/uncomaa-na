@@ -41,7 +41,7 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-gray-400 max-sm:pt-4">Membership</h6>
           <ul>
-            <a href=""><li className="py-2 text-sm">Become a member</li></a>
+            <a href="/membership"><li className="py-2 text-sm">Become a member</li></a>
             <a href=""><li className="py-2 text-sm">Membership Forum</li></a>
             <a href=""><li className="py-2 text-sm">Membership Benefits</li></a>
             <a href=""><li className="py-2 text-sm">Renew Membership</li></a>
@@ -59,7 +59,7 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-gray-400 max-sm:pt-4">Quick Links</h6>
           <ul>
-            <a href=""><li className="py-2 text-sm">About</li></a>
+            <a href="/about"><li className="py-2 text-sm">About</li></a>
             <a href=""><li className="py-2 text-sm">Membership</li></a>
             <a href=""><li className="py-2 text-sm">Jobs</li></a>
             <a href=""><li className="py-2 text-sm">Contribute</li></a>

@@ -20,6 +20,10 @@ export const navBarLinks = [
     label: "Resources",
   },
   {
+    route: "/partners",
+    label: "Partners",
+  },
+  {
     route: "/contact",
     label: "Contact",
   },

@@ -2,7 +2,12 @@ import ExPresidentCard from "@/components/cards/ExPresidentCard";
 import OfficerCard from "@/components/cards/OfficerCard";
 import PurposeContentCard from "@/components/cards/PurposeContentCard";
 import Hero from "@/components/shared/Hero";
-import { currentOfficerDetails, exPresidentsDetails, founders } from "@/constants";
+import {
+  currentOfficerDetails,
+  exPresidentsDetails,
+  founders,
+} from "@/constants";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -38,7 +43,7 @@ const page = () => {
       </div>
 
       <div className="bg-gray-100 text-black py-24">
-      <div className="mx-auto text-center">
+        <div className="mx-auto text-center">
           <h1 className="text-4xl font-semibold mb-10">Founding Members</h1>
         </div>
         <div className="sm:px-16 lg:mx-56">
@@ -80,13 +85,15 @@ const page = () => {
             {" "}
             <div className="flex flex-col items-center justify-center lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 gap-x-12">
               {currentOfficerDetails.map((officer) => (
-                <OfficerCard
-                  key={officer.name}
-                  name={officer.name}
-                  position={officer.position}
-                  image={officer.image}
-                  email={officer.email}
-                />
+                <Link href={"/contact"}>
+                  <OfficerCard
+                    key={officer.name}
+                    name={officer.name}
+                    position={officer.position}
+                    image={officer.image}
+                    email={officer.email}
+                  />
+                </Link>
               ))}
             </div>
           </div>
