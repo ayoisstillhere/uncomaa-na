@@ -87,6 +87,24 @@ export const exPresidentsDetails = [
   },
 ];
 
+export const founders = [
+  {
+    name: "Dr. Obinna Maduka",
+    image:"/assets/founder1.jpeg",
+    email: "",
+  },
+  {
+    name: "Prof. Ifeoma Okoye",
+    image:"/assets/founder2.jpeg",
+    email: "",
+  },
+  {
+    name: "Dr. Emmanuel Okafor",
+    image:"/assets/founder3.jpeg",
+    email: "",
+  },
+];
+
 export const slides = [
   {
     image: "/assets/slides/slide1.jpeg",
