@@ -16,13 +16,13 @@ const VideoCarousel = ({ slides }: any) => {
     setCurrent((current - 1 + length) % length);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 6000); // Change video every 3 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 6000); // Change video every 3 seconds
 
-    return () => clearInterval(interval); // Cleanup the interval on unmount
-  }, [current]);
+  //   return () => clearInterval(interval); // Cleanup the interval on unmount
+  // }, [current]);
 
   useEffect(() => {
     // Pause the previous video when the current slide changes

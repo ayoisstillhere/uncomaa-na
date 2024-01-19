@@ -45,7 +45,7 @@ const page = () => {
           Videos From Previous Events
         </h1>
         <div className="mt-12"></div>
-        <VideoCarousel slides={eventVids} />
+        <VideoCarousel slides={eventVids} className="max-sm:mx-2" />
         <div className="mt-12"></div>
       </div>
     </div>
