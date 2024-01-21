@@ -49,7 +49,7 @@ const NavBar = () => {
         </div>)
         }
         {pathname === "/" ? (
-          <div className="hidden lg:flex gap-8 text-xs items-center px-10">
+          <div className="hidden lg:flex gap-8 text-md items-center px-10">
             {navBarLinks.map((link) => {
               const isActive =
                 (pathname.includes(link.route) && link.route.length > 1) ||
@@ -68,7 +68,7 @@ const NavBar = () => {
             })}
           </div>
         ) : (
-          <div className="hidden text-white lg:flex gap-8 text-xs items-center px-10">
+          <div className="hidden text-white lg:flex gap-8 text-md items-center px-10">
             {navBarLinks.map((link) => {
               const isActive =
                 (pathname.includes(link.route) && link.route.length > 1) ||
