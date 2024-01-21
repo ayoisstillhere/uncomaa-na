@@ -39,15 +39,19 @@ const NavBar = () => {
             </p> */}
           </div>
         </Link>
-        {
-          pathname === "/" ? (
-            <div onClick={handleNav} className="block lg:hidden">
-              {nav ? <div></div> : <AiOutlineMenu size={20} />}
-            </div>) : (
-        <div onClick={handleNav} className="block lg:hidden">
-          {nav ? <div></div> : <AiOutlineMenu size={20} className="text-white"/>}
-        </div>)
-        }
+        {pathname === "/" ? (
+          <div onClick={handleNav} className="block lg:hidden">
+            {nav ? <div></div> : <AiOutlineMenu size={20} />}
+          </div>
+        ) : (
+          <div onClick={handleNav} className="block lg:hidden">
+            {nav ? (
+              <div></div>
+            ) : (
+              <AiOutlineMenu size={20} className="text-white" />
+            )}
+          </div>
+        )}
         {pathname === "/" ? (
           <div className="hidden lg:flex gap-8 text-md items-center px-10">
             {navBarLinks.map((link) => {
@@ -89,15 +93,21 @@ const NavBar = () => {
         )}
 
         <div className="lg:flex gap-2 hidden">
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
-            Donate!
-          </button>
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
-            Join
-          </button>
-          <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
-            Dues
-          </button>
+          <Link href={"/membership"}>
+            <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
+              Donate!
+            </button>
+          </Link>
+          <Link href={"/membership"}>
+            <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
+              Join
+            </button>
+          </Link>
+          <Link href={"/membership"}>
+            <button className="px-[18px] py-[11px] bg-primary-green text-white font-normal text-xs">
+              Dues
+            </button>
+          </Link>
         </div>
 
         <div
@@ -142,15 +152,21 @@ const NavBar = () => {
       {!nav ? (
         <div className="mt-20 flex items-center justify-between w-full absolute top-0 left-0 right-0 z-10 bg-transparent p-2">
           <div className="lg:hidden flex gap-2 justify-between w-full">
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
-              Donate!
-            </button>
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
-              Join
-            </button>
-            <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs">
-              Dues
-            </button>
+            <Link href={"/membership"} className="w-full">
+              <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs w-full">
+                Donate!
+              </button>
+            </Link>
+            <Link href={"/membership"} className="w-full">
+              <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs w-full">
+                Join
+              </button>
+            </Link>
+            <Link href={"/membership"} className="w-full">
+              <button className="flex-grow py-4 bg-primary-green text-white font-normal text-xs w-full">
+                Dues
+              </button>
+            </Link>
           </div>
         </div>
       ) : (

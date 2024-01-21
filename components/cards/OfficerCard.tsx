@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   name: string;
@@ -16,14 +17,13 @@ const OfficerCard = ({ name, position, image, email }: Props) => {
       <div className="bg-white text-black flex flex-col pt-4 pb-6 px-8 gap-4">
         <div className="flex flex-col gap-2">
           <h4 className="font-bold text-xl">{name}</h4>
-          <h3 className="font-normal text-[#3B3F5C] text-base">
-            {position}
-          </h3>
+          <h3 className="font-normal text-[#3B3F5C] text-base">{position}</h3>
         </div>
-
-        <button className="bg-secondary-blue text-white w-full py-4 font-bold">
-          Contact
-        </button>
+        <Link href={"/contact"}>
+          <button className="bg-secondary-blue text-white w-full py-4 font-bold">
+            Contact
+          </button>
+        </Link>
       </div>
     </div>
   );

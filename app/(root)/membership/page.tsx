@@ -1,10 +1,22 @@
+"use client";
+
 import MembershipForm from "@/components/forms/MembershipForm";
 import Hero from "@/components/shared/Hero";
+import React, { useEffect } from "react";
 
 const MembershipPage = () => {
+  useEffect(() => {
+    // Scroll to a specific section using a reference or an id
+    const sectionElement = document.getElementById("scrollSection");
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="bg-bg-light-green">
       <Hero text="Membership" img="/assets/membership.jpeg" />
+      <section id="scrollSection">
       <div className="text-center py-16 px-4">
         <h1 className="font-bold text-3xl">UNCOMAA-NA Membership</h1>
         <h6 className="text-[#646464] text-sm">
@@ -14,21 +26,30 @@ const MembershipPage = () => {
 
         <section className="my-12 mx-auto max-w-2xl">
           <p className="text-[#646464]">
-            As a member of UNCOMAA-NA, you enjoy various benefits, including networking opportunities,
-            access to exclusive events, and the satisfaction of supporting the College of Medicine's
-            initiatives.
+            As a member of UNCOMAA-NA, you enjoy various benefits, including
+            networking opportunities, access to exclusive events, and the
+            satisfaction of supporting the College of Medicine's initiatives.
           </p>
 
           <div className="flex items-center justify-center mt-4">
-          <div className="bg-white p-8 rounded shadow-md w-96 text-center">
-            <h1 className="text-2xl font-bold mb-4">UNCOMAA-NA Alumni Association</h1>
-            <p className="text-gray-600 mb-4">
-            Great lions and lionesses!!, UNCOMAA-NA is a 501(c)(3) organization. Annual dues and any donations made to UNCOMAA-NA are tax deductible.
-            </p>
-            <p className="text-gray-600 mb-4 font-bold text-xl">Please Zelle $200 membership dues, and other charitable funds to:</p>
-            <p className="text-primary-green font-bold mb-4 text-2xl">❗️❗️uncomaa@gmail.com❗️❗️</p>
+            <div className="bg-white p-8 rounded shadow-md w-96 text-center">
+              <h1 className="text-2xl font-bold mb-4">
+                UNCOMAA-NA Alumni Association
+              </h1>
+              <p className="text-gray-600 mb-4">
+                Great lions and lionesses!!, UNCOMAA-NA is a 501(c)(3)
+                organization. Annual dues and any donations made to UNCOMAA-NA
+                are tax deductible.
+              </p>
+              <p className="text-gray-600 mb-4 font-bold text-xl">
+                Please Zelle $200 membership dues, and other charitable funds
+                to:
+              </p>
+              <p className="text-primary-green font-bold mb-4 text-2xl">
+                ❗️❗️uncomaa@gmail.com❗️❗️
+              </p>
+            </div>
           </div>
-        </div>
 
           {/* How to Join */}
           <section className="my-12">
@@ -38,26 +59,28 @@ const MembershipPage = () => {
               <ol className="list-decimal pl-6 mt-2 text-left">
                 <li>Complete the online registration form.</li>
                 <li>Submit the annual membership dues through Zelle.</li>
-                <li>Stay connected and enjoy the benefits of being part of our alumni association!</li>
+                <li>
+                  Stay connected and enjoy the benefits of being part of our
+                  alumni association!
+                </li>
               </ol>
             </p>
           </section>
         </section>
-         {/* Membership Form */}
-      <section className="my-12 mx-auto max-w-2xl">
-        <MembershipForm />
-      </section>
+        {/* Membership Form */}
+        <section className="my-12 mx-auto max-w-2xl">
+          <MembershipForm />
+        </section>
       </div>
+      </section>
     </div>
   );
 };
 
 export default MembershipPage;
 
-
-
-
-        {/* <div className="lg:grid lg:grid-cols-2 xl:grid-cols-2 gap-4 md:flex md:flex-wrap justify-center lg:px-32 md:px-20 ">
+{
+  /* <div className="lg:grid lg:grid-cols-2 xl:grid-cols-2 gap-4 md:flex md:flex-wrap justify-center lg:px-32 md:px-20 ">
           {membershipClasses.map((membershipClass, index) => (
             <MemberClassCard
               key={index}
@@ -66,5 +89,8 @@ export default MembershipPage;
               imageSrc={membershipClass.imageSrc}
             />
           ))}
-        </div> */}
-        {/* Membership Benefits */}
+        </div> */
+}
+{
+  /* Membership Benefits */
+}

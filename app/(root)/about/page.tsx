@@ -7,7 +7,6 @@ import {
   exPresidentsDetails,
   founders,
 } from "@/constants";
-import Link from "next/link";
 
 const page = () => {
   return (
@@ -85,15 +84,13 @@ const page = () => {
             {" "}
             <div className="flex flex-col items-center justify-center lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 gap-x-12">
               {currentOfficerDetails.map((officer) => (
-                <Link href={"/contact"}>
-                  <OfficerCard
-                    key={officer.name}
-                    name={officer.name}
-                    position={officer.position}
-                    image={officer.image}
-                    email={officer.email}
-                  />
-                </Link>
+                <OfficerCard
+                  key={officer.name}
+                  name={officer.name}
+                  position={officer.position}
+                  image={officer.image}
+                  email={officer.email}
+                />
               ))}
             </div>
           </div>
