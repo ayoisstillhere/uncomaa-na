@@ -90,7 +90,7 @@ export const exPresidentsDetails = [
     email: "",
   },
   {
-    name: "Obinna Egbo, MD",
+    name: "Dr. Obinna Egbo",
     image:"/assets/exPresident7.jpeg",
     email: "",
   },
