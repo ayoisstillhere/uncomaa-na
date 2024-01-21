@@ -66,7 +66,7 @@ const page = () => {
         <div className="px-20 sm:px-16">
           <div className="mx-auto max-w-screen-lg">
             {" "}
-            <div className="flex flex-col items-center justify-center lg:grid md:grid sm:grid sm:grid-cols-2 lg:grid-cols-6 md:grid-cols-3 gap-x-6">
+            <div className="flex flex-col items-center justify-center lg:grid md:grid sm:grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-x-6">
               {exPresidentsDetails.map((officer) => (
                 <ExPresidentCard
                   key={officer.name}

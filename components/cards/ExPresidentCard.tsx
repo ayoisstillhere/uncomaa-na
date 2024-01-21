@@ -14,7 +14,7 @@ const ExPresidentCard = ({ name, image }: Props) => {
         </div>
         <div className="bg-white text-black flex flex-col pt-4 pb-6 pl-2 gap-6">
           <div className="flex flex-col gap-2">
-            <h4 className="font-bold text-xs">{name}</h4>
+            <h4 className="font-bold text-sm">{name}</h4>
           </div>
         </div>
       </div>

@@ -89,6 +89,11 @@ export const exPresidentsDetails = [
     image:"/assets/exPresident6.jpeg",
     email: "",
   },
+  {
+    name: "Obinna Egbo, MD",
+    image:"/assets/exPresident7.jpeg",
+    email: "",
+  },
 ];
 
 export const founders = [
